@@ -1,7 +1,7 @@
 <template>
     <div class="list">
         <div class="row row-cols-5">
-            <div class="col" v-for="(element,index) in listOfSongs" :key="index">
+            <div class="col mb-3" v-for="(element,index) in listOfSongs" :key="index">
                 <SongCard :album="element"/>
             </div>
 

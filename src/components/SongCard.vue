@@ -1,8 +1,8 @@
 <template>
     <div class="card text-center">
         <img :src="album.poster" :alt="album.title">
-        <h3>{{ album.title }}</h3>
-        <div class="description">{{ album.author }}</div>
+        <h5>{{ album.title }}</h5>
+        <div class="author-name">{{ album.author }}</div>
         <div class="description">{{ album.year }}</div>
     </div>
 </template>
@@ -20,16 +20,21 @@ export default {
     @import '../scss/variables.scss';
     .card {
         background-color: $_primaryColor;
+        height: 100%;
 
         img {
             margin: 10px;
         }
 
-        h3 {
+        h5 {
             color: white;
+        }
+        .author-name {
+            color: gray;
         }
         .description {
             color: gray;
+            margin-bottom: 10px;
         }
     }
 </style>
